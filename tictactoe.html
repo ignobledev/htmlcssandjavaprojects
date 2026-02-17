@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+<title>Document</title>
+<style>
+*{
+margin:0;
+padding:0;
+}
+
+body {
+background-color:#548687;
+text-align:center;
+}
+.container{
+
+border-radius:00px 00px 00px  00px;
+background-color:white;
+z-index:2;
+padding:40px;
+position:relative;
+top:100px;
+}
+.game{
+padding:40px;
+width:48vmin;
+background-color:azure;
+margin:auto;
+border-radius:30px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+gap:10px;
+
+}
+.box{
+background-color:skyblue;
+height:15vmin;
+width:15vmin;
+cursor: pointer;
+
+border-radius:10px;
+position:relative;
+color:red;
+font-size:55px;
+text-align:center;
+font-weight:900;
+
+}
+#reset-btn{
+padding:1rem;
+font-size: 20px;
+    
+    position:relative;
+    background-color:#b0413e;
+    border-radius:20px;
+    color:white;
+    font-weight:900;
+    
+    
+}reset-btn:click{ 
+ background-color:green;
+
+}
+#new-btn{
+width:90px;
+background-color:red;
+color:white;
+padding:5px;
+border-radius:8px;
+}
+</style>
+</head>
+<body>
+<div class="msg-container">
+<p id="msg">Winner</p>
+<button id="new-btn">New Game</button>
+</div>
+<main>
+<h1> Tic Tac Toe</h1>
+<div class="container">
+<div class="game">
+<button class="box"></button>
+<button class="box"></button>
+<button class="box"></button>
+<button class="box"></button>
+<button class="box"></button>
+<button class="box"></button>
+<button class="box"></button>
+<button class="box"></button>
+<button class="box"></button>
+</div>
+
+<button id="reset-btn"> Reset Game</button>
+</main>
+</div>
+</body>
+<script src="tictactoe.js"></script>
+</html>
