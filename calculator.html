@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
-<div class = "calculator">
+<div id="timer">Time:<span id="time"></span></div>
+<div class="calculator">
+
+
 <input type="text" id="result" >
 <div class="buttons">
  <button onclick="appendOperator('+')">+</button>
@@ -29,6 +32,15 @@
 <button onclick="calculateresult()" class="equal">=</button>
 </div>
 </div>
-<script src="calculator.js></script>
+<script>
+setInterval(myFunction,1000);
+function myFunction(){
+let d = new Date();
+document.getElementById("time").innerHTML =
+d.getHours() + ":" +
+  d.getMinutes() + ":" +
+  d.getSeconds();}
+</script>
+
 </body>
 </html>

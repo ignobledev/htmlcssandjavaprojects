@@ -3,11 +3,23 @@ margin: 0;
 padding:0;
 box-sizing:border-box;
 }
+#timer{
+padding-bottom:20px;
+padding-top:20px;
+width:400px;
+background-color:aqua;
+color:white;
+position:relative;
+margin:auto;
+top:200px;
+text-align:left;
+padding-left:70px;
+font-size:40px;
+border-radius:50px;
+}
+
+
 body{
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
 background:linear-gradient(to left,#0072ff,#00c6ff);
   font-family:'Roboto',sans-serif;
  }
@@ -19,6 +31,10 @@ box-shadow: 9px 8px 30px rgba(9,0,0,9);
 width:300px;
 height:350px;
 background-color:rgb(92, 155, 252);
+margin:auto;
+position:relative;
+top:300px;
+
 }
 input{
 width:100%;
@@ -39,7 +55,6 @@ display:grid;
 grid-template-columns:repeat(4,1fr);
 padding:10px;
 background-color:red;
-
 }
 button {
 border-radius:5px;
