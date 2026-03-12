@@ -8,16 +8,49 @@
 </head>
 <body>
 <h1> DOM Demo by Apna college </h1>
+
 <h4> Topics : Starter Code </h4>
 <p> Let's learn about DOM concepts in detail.</p>
-<button id="btn1" > Click me! </button>
+<button id="name" onclick="result()">Clickme!</button>
 <div id="box" onmouseover="console.log('you are inside div')"> this is a box</div>
 
-<button id="name" >name</button>
-<script src="DOM.js" >
+<button id="na" >name</button>
+<script >
 
+document.getElementById("name").addEventListener("click", function(){
+    this.style.backgroundColor = "blue";
+});
+let age = 30;
+if(age>=20){
+console.log("yes");
+}
+else{
+console.log("no");
 
+}
 
+let grade = 'A';
+switch(grade){
+case 'A':result="second Division";
+break;
+case 'b':result = "first division";
+break;
+case 'c':result ="third division";
+break;
+default:result="fail";
+
+}
+console.log(result);
+let marks = 43;
+if(marks>=43){
+console.log("hi");
+}
+else if(marks<60 && marks>=40){
+console.log("tisd");
+}
+else{
+console.log("fail");
+}
 
 </script>
 </body>
