@@ -2,31 +2,50 @@
 <html>
 <head>
 <title>Student Marksheet</title>
-<link rel="stylesheet" href="style.css">
-</head>
+
+<style>
+  
+  </style>
+ </head>
 <body>
 <div class="container">
 <h1>Student Marksheet</h1>
-<label>Student Name:</label>
-<input type="text" id="name">
+  <div>
+<p>name</p><input type="text" id="name">
+</div>
+<div>
 
-<label>Math:</label>
-<input type="number" id="math">
-
-<label> Science:</label>
+  <input type="number" id="math">
+</div>
+  <div>
 <input type="number" id="science">
-
- <label>English</label>
+</div>
+  <div>
+ 
  <input type="number" id="English">
-
- <label> Computer</label>
+</div>
+  <div>
+ 
  <input type="number" id="computer">
-
- <button onclick="generateresult()">Generateresult</button>
- <div class="result" id="result"></div>
+</div>
+ <button onclick="generateresult()">result</button>
+ <p id="result"></p>
  </div>
  <script>
+  function generateresult(){
+  
+  
+    let m1 = Number(document.getElementById("math").value);
+    let m2 = Number(document.getElementById("science").value);
+    let m3 = Number(document.getElementById("English").value);
+    let m4 = Number(document.getElementById("computer").value);
+    
 
+    let average = (m1 + m2 + m3 + m4 ) / 4;
+
+    document.getElementById("result").innerText = "Average Marks: " + average;
+    
+  }
  </script>
 </body>
 </html>

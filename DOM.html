@@ -8,7 +8,10 @@
 </head>
 <body>
 <h1> DOM Demo by Apna college </h1>
+<input type="number" id="age" placeholder="Enter your age">
+<button onclick="checkAge()">Check Age</button>
 
+<p id="result"></p>
 <h4> Topics : Starter Code </h4>
 <p> Let's learn about DOM concepts in detail.</p>
 <button id="name" onclick="result()">Clickme!</button>
@@ -16,7 +19,21 @@
 
 <button id="na" >name</button>
 <script >
+function checkAge(){
 
+    let age = document.getElementById("age").value;
+
+    if(age >= 18){
+        document.getElementById("result").innerText = "Valid age. You are an adult.";
+    }
+    else if(age > 0){
+        document.getElementById("result").innerText = "You are under 18.";
+    }
+    else{
+        document.getElementById("result").innerText = "Invalid age.";
+    }
+
+}
 document.getElementById("name").addEventListener("click", function(){
     this.style.backgroundColor = "blue";
 });
