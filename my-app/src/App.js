@@ -8,7 +8,7 @@ function App() {
   
 <>
    <Navbar/>
-   <div className="container">
+   <div className="container my-5">
      <Textform heading="Enter the text to analyze"/>
    </div>
    
