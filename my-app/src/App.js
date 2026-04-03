@@ -6,7 +6,7 @@ function App() {
   return (
 <>
  
-<Navbar title="Textutils"/>
+<Navbar title="Textutils"  name="satyam"/>
   
   
     </>
