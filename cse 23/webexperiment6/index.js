@@ -11,6 +11,7 @@ changeheading.addEventListener("mouseover", function () {
     if (input.value !== "") {
         heading.innerHTML = input.value;
     }
+    input.value=" ";
 });
 
 // Change background color
