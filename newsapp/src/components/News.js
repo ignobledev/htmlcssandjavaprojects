@@ -35,13 +35,7 @@ export default class News extends Component {
     }
   ]
   
-  constructor(){
-    super();
-    console.log("i am satyam kushwaha coming from news component called newsitem");
-   this.state ={
-    articles :this.articles
-  }
-}
+
   render() {
     return (
       <div className="container my-3">

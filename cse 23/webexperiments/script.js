@@ -1,10 +1,12 @@
 function calculateResult(){
 let n = document.getElementById("subjects").value;
 let total = 0;
+setTimeout(()=>{
 for(let i=1;i<=n;i++){
 let marks = parseFloat(prompt("Enter marks for Subject " + i));
 total = total + marks;
-}
+}},2000);
+setTimeout(()  =>{
 let average = total / n;
 let grade;
 let result;
@@ -34,4 +36,6 @@ document.getElementById("result").innerHTML =
 "Average Marks: " + average.toFixed(2) + "<br>" +
 "Grade: " + grade + "<br>" +
 "Result: " + result;
+},4000);
 }
+
