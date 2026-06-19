@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            align-items: center;
+            background-color: bisque;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+        
+        }
+        .container{
+            background-color: aliceblue;
+         width:400px;
+         padding:20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>
+        Enter the marks below
+    </h1>
+    <input type="Number" placeholder=" enter the marks" id="marks">
+    <button onclick="next()">next</button>
+    <button onclick="calculate()">calculate</button>
+    </div>
+</body>
+<p id="output"></p>
+<script>
+  
+
+
+    let sum = 0;
+    function next(){
+    for(let i =0; i<4; i++){
+          let m1 = Number(document.getElementById("marks").value);
+        sum = sum + m1;
+        document.getElementById("marks").value = "";
+    }
+}
+function calculate(){
+    let average = sum/4;
+    let result = "total : "+ sum + " average = "+average; 
+document.getElementById("output").innerHTML = result;
+sum=0;
+}
+</script>
+</html>
